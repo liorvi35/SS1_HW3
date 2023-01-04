@@ -5,7 +5,6 @@
 void shift_element(int*, int);
 void insertion_sort(int*, int);
 
-
 int main()
 {
     int arr[SIZE] = {0}, i = 0, *ptr = &arr[0];
@@ -30,39 +29,8 @@ int main()
         
         ptr += 1;
     }
+    
     printf("\n");
-
-
-    // int arr[] = {0,1,2,3,4,5};
-    // shift_element(arr + 1 , 3);
-    // // 0 x 1 2 3 5
-
-    //1 4 3 5 2  array
-    //1 4 2 5 7  sort 1 
-    //1 4 2 5 7  sort 4
-
-    //1 3 4 5 2  sort 2  (shift l(1 , 1))
-
-    // for (size_t i = 0; i < sizeof(arr)/sizeof(int); i++)
-    // {
-    //     printf("%d " , arr[i]);
-    // }
-    // printf("\n");
-
-    // //1 4 3 5 2  array
-    // int arr[] = {};
-    // for (size_t i = 0; i < sizeof(arr)/sizeof(int); i++)
-    // {
-    //     printf("%d " , arr[i]);
-    // }
-    // printf("\n");
-    // insertion_sort(arr , 0);
-    // for (size_t i = 0; i < sizeof(arr)/sizeof(int); i++)
-    // {
-    //     printf("%d " , arr[i]);
-    // }
-    // printf("\n");
-     
     
     return 0;
 }
@@ -82,11 +50,6 @@ void shift_element(int *arr, int i)
     }
 }
 
-//1 4 3 5 2  array
-//i = 1
-//count = 0
-//cur = 4
-//parr -> arr[0] (=1)
 void insertion_sort(int *arr, int len)
 {
     int *parr = NULL;
