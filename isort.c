@@ -7,7 +7,7 @@ void insertion_sort(int*, int);
 
 int main()
 {
-    int arr[SIZE] = {0}, i = 0, *ptr = &arr[0];
+    int arr[SIZE] = {0}, i = 0, *ptr = &arr;
 
     for(i = 0; i < SIZE; i++)
     {
